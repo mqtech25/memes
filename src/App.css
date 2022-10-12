@@ -1,5 +1,6 @@
 .App-header{
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background:  var(--linear-gradient);
   color: var(--light-color);
   padding:  10px 0;
 }
@@ -8,6 +9,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 .App-logo{
   width: 40px;
