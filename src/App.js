@@ -1,7 +1,6 @@
 import "./App.css";
 import Nav from "./component/headnav";
-// import MainContent from "./component/mainContent";
-import Ajx from "./component/test";
+import MainContent from "./component/mainContent";
 function App() {
   return (
     <div className="App">
@@ -9,8 +8,8 @@ function App() {
         <Nav />
       </header>
       <main>
-        {/* <MainContent /> */}
-        <Ajx />
+        <MainContent />
+        {/* <Ajx /> */}
       </main>
     </div>
   );
