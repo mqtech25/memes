@@ -1,20 +1,61 @@
-.App-header{
+.App-header {
   background-color: var(--primary-color);
   color: var(--light-color);
-  padding:  10px 0;
+  padding: 10px 0;
 }
-.App-nav{
+.App-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.App-logo{
+.App-logo {
   width: 40px;
 }
-.brand{
+.brand {
   display: flex;
   align-items: center;
   font-size: 22px;
+}
 
+.meme_form {
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+.meme_form input {
+  padding: 8px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  font-size: 14px;
+}
+.meme_form input:focus,
+.meme_form input:focus-visible {
+  outline: 2px solid var(--lightprimary-color);
+}
+.btn {
+  padding: 5px 6px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 5px;
+  border: 2px solid var(--light-color);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 767px) {
+  .meme_form {
+    flex-direction: column;
+  }
+  .meme_form input {
+    width: 100%;
+  }
 }
