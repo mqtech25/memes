@@ -50,6 +50,41 @@
 .btn:hover {
   opacity: 0.9;
 }
+.text-center {
+  text-align: center;
+}
+.downloadDiv {
+  display: none;
+  margin: 10px 0;
+}
+.meme-img {
+  width: 100%;
+}
+.memeDiv {
+  position: relative;
+
+  text-align: center;
+}
+.memeDiv .memeline1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #ffdb00;
+  padding: 15px;
+  display: none;
+}
+.memeDiv .memeline2 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #ffdb00;
+  padding: 15px;
+  display: none;
+}
 
 @media screen and (max-width: 767px) {
   .meme_form {
