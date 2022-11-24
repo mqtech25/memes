@@ -62,7 +62,7 @@
 }
 .memeDiv {
   position: relative;
-
+  display: none;
   text-align: center;
 }
 .memeDiv .memeline1 {

@@ -27,6 +27,7 @@ export default function MainContent() {
   const getData = () => {
     var randomImgNo = Math.floor(Math.random() * memes.length);
     imgRef.current.src = memes[randomImgNo].url;
+    memeImagDownload.current.style.display= "block";
     downloadRef.current.style.display = "block";
     if (inputLine1.current?.value) {
       memel1.current.innerText = inputLine1.current.value;
@@ -43,11 +44,16 @@ export default function MainContent() {
     download(dataURL, "download.png", "image/png");
   };
   const Inputtext = (e) => {
-    if (imgRef.current.src !== "") {
+    if (memeImagDownload.current.style.display === "block") {
       memel1.current.innerText = inputLine1.current.value;
       memel1.current.style.display = "block";
+      memel2.current.innerText = inputLine2.current.value;
+      memel2.current.style.display = "block";
       if (inputLine1.current.value === "") {
         memel1.current.style.display = "none";
+      }
+      if (inputLine2.current.value === "") {
+        memel2.current.style.display = "none";
       }
     }
   };
@@ -63,6 +69,7 @@ export default function MainContent() {
         <input
           type="text"
           ref={inputLine2}
+          onKeyUp={Inputtext}
           placeholder="Enter Second Line"
         ></input>
         <button type="button" className="btn" onClick={getData}>
