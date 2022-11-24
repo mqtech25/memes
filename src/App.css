@@ -36,6 +36,9 @@
 .meme_form input:focus-visible {
   outline: 2px solid var(--lightprimary-color);
 }
+.m-0 {
+  margin: 0;
+}
 .btn {
   padding: 5px 6px;
   cursor: pointer;
@@ -84,6 +87,54 @@
   color: #ffdb00;
   padding: 15px;
   display: none;
+}
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.counter .counter__minus {
+  background-color: #686868;
+  border: 1px solid #686868;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: -20px;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.counter .counter__count {
+  width: 100px;
+  height: 100px;
+  background-color: #efefee;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  padding: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.244);
+}
+.counter .counter__plus {
+  background-color: #686868;
+  border: 1px solid #686868;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-left: -20px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.counter .counter__minus:hover,
+.counter .counter__plus:hover {
+  background-color: #686868d7;
 }
 
 @media screen and (max-width: 767px) {
