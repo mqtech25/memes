@@ -3,6 +3,8 @@ import Nav from "./component/headnav";
 import MainContent from "./component/mainContent";
 import MapData from "./component/mapArray";
 import Counter from "./component/counterUsingState";
+import StateHook from "./component/stateHook";
+import BsCard from "./component/usercardState";
 function App() {
   return (
     <div className="App">
@@ -15,6 +17,10 @@ function App() {
         <MapData />
         <div className="container">
           <Counter />
+          <StateHook/>
+        </div>
+        <div className="container">
+          <BsCard/>
         </div>
       </main>
     </div>
