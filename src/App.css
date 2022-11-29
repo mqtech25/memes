@@ -136,7 +136,62 @@
 .counter .counter__plus:hover {
   background-color: #686868d7;
 }
+.card{
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #1A1B21 ;
+  color: #fff;
+  box-shadow: #16161982 0px 0px 8px;
+  position: relative;
+}
+.card-img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+}
+.card-head .ratting{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.card-head .card-owner-title{
+  margin: 0;
+}
+.card-head .card-owner-position{
+  font-weight: 400;
+  margin: 0;
+  color: #F3BF99;
+}
+.card-ower-web-link{
+  color: #fff;
+  text-decoration: none;
+}
+.card-contect-btns {
+ margin: 15px 0; 
+}
+.card-body{
+  padding: 20px;
+}
+.card-body .about h2{
+ margin: 0;
+}
 
+.card-footer{
+  background-color: #161619;
+  padding: 10px;
+  border-radius: 0 0 10px 10px ;
+
+}
+.social-media{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 767px) {
   .meme_form {
     flex-direction: column;
