@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import Star from "./star";
 import image from "../assest/img/mqtech.jpeg"
-import start from "../assest/img/star.png"
-import favstart from "../assest/img/favStar.png"
+// import start from "../assest/img/star.png"
+// import favstart from "../assest/img/favStar.png"
 export default function BsCard(){
     const [user,setUser]=useState({
         name:"Muhammad Qasim",
@@ -15,19 +16,20 @@ export default function BsCard(){
         interest:{
             0:"Traveling", 1: "Movies", 2:"Gaming", 3: "Photography"
         },
-        isFav:false,
+        isFav:true,
     })
-    const favImg= user.isFav?favstart:start;
+    // const favImg= user.isFav?favstart:start;
     const fav=()=>{
         // setUser({...user,isFav:!user.isFav}) //direct change value  
-        setUser(prevState=>{return {...user,isFav:!prevState.isFav}}) //direct change value  
+        setUser(prevState=>({...user,isFav:!prevState.isFav})) // change value by callback 
     }
     return (
             <div className="card">
                 <div className="card-head text-center">
                     <img src={user.img} className="card-img" alt="mqtech"></img>
                     <div className="ratting" onClick={fav}>
-                        <img src={favImg} alt="" />
+                        {/* <img src={favImg} alt="" /> */}
+                        <Star isLike={user.isFav} />
                     </div>
                     <h2 className="card-owner-title">{user.name}</h2>
                     <h3 className="card-owner-position">{user.position}</h3>
